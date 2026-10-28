@@ -37,5 +37,5 @@ export const VEHICLE_SEATS = 7;
  * 2) Copy your Access Key
  * 3) Paste it below, replacing the placeholder text
  */
-export const WEB3FORMS_ACCESS_KEY = "YOUR_WEB3FORMS_ACCESS_KEY_HERE";
+export const WEB3FORMS_ACCESS_KEY = "01165f82-f331-45fa-9376-9d92c74a2c7d";
 export const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
