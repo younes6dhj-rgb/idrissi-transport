@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --color-terracotta-50: #fdf4f1;
+  --color-terracotta-100: #fbe6de;
+  --color-terracotta-200: #f5c7b4;
+  --color-terracotta-300: #eea587;
+  --color-terracotta-400: #e27d54;
+  --color-terracotta-500: #c8532e;
+  --color-terracotta-600: #a8401f;
+  --color-terracotta-700: #86341a;
+  --color-terracotta-800: #6b2a16;
+  --color-terracotta-900: #4f1f11;
+
+  --color-majorelle-50: #eef2fb;
+  --color-majorelle-100: #d9e2f6;
+  --color-majorelle-200: #b3c5ed;
+  --color-majorelle-300: #86a3e0;
+  --color-majorelle-400: #5a7fd1;
+  --color-majorelle-500: #3a5fc0;
+  --color-majorelle-600: #2e4b9d;
+  --color-majorelle-700: #263d80;
+  --color-majorelle-800: #1f3166;
+  --color-majorelle-900: #19274f;
+
+  --font-display: "Poppins", "Cairo", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", "Cairo", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+[dir="rtl"] .rtl-flip {
+  transform: scaleX(-1);
+}
+
+.zellige-pattern {
+  background-image: radial-gradient(circle at 1px 1px, rgba(200, 83, 46, 0.14) 1px, transparent 0);
+  background-size: 22px 22px;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.6s ease-out both;
+}
